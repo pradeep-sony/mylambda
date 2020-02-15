@@ -13,5 +13,5 @@ Resources:
         GET:
           Type: Api
           Properties:
-            Path: /greenapp
+            Path: /myapp
             Method: get
