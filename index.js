@@ -1,9 +1,12 @@
-var time = require('time');
-exports.handler = (event, context, callback) => {
-    var currentTime = new time.Date();
-    currentTime.setTimezone("America/Los_Angeles");
-    callback(null, {
-        statusCode: '200',
-        body: 'howdy',
-    });
+exports.lambda_handler = (event, context, callback) => {
+  console.log('Received event:', JSON.stringify(event, null, 2));
+
+  var message = "Hello World!";
+
+  callback(null, {
+    statusCode: 200,
+    body: JSON.stringify({
+      Output: message
+    })
+  });
 };
