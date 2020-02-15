@@ -9,8 +9,8 @@ Resources:
       Runtime: nodejs10.x
       CodeUri: ./
       Events:
-        MyTimeApi:
+        GET:
           Type: Api
           Properties:
-            Path: /TimeResource
-            Method: GET
+            Path: /blueapp
+            Method: get
