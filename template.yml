@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: Outputs the time
+Description: Blue Green Deployment
 Resources:
   Salesforecast:
     Type: AWS::Serverless::Function
@@ -9,9 +9,3 @@ Resources:
       Runtime: nodejs10.x
       AutoPublishAlias: green
       CodeUri: ./
-      Events:
-        GET:
-          Type: Api
-          Properties:
-            Path: /myapp
-            Method: get
