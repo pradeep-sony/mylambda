@@ -7,10 +7,11 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs10.x
+      AutoPublishAlias: green
       CodeUri: ./
       Events:
         GET:
           Type: Api
           Properties:
-            Path: /blueapp
+            Path: /greenapp
             Method: get
