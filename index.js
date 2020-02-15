@@ -1,7 +1,7 @@
 exports.handler = (event, context, callback) => {
   console.log('Received event:', JSON.stringify(event, null, 2));
 
-  var message = "Hello World!";
+  var message = "Hello Praddy!";
 
   callback(null, {
     statusCode: 200,
