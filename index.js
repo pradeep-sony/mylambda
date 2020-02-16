@@ -1,7 +1,7 @@
 exports.handler = (event, context, callback) => {
   console.log('Received event:', JSON.stringify(event, null, 2));
 
-  var message = "Hello cool guy from Google!";
+  var message = "Sales Forecast App Ver 1.0";
 
   callback(null, {
     statusCode: 200,
