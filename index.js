@@ -1,7 +1,7 @@
 exports.handler = (event, context, callback) => {
   console.log('Received event:', JSON.stringify(event, null, 2));
 
-  var message = "Sales Forecast App Update 2.0";
+  var message = "Dxinfra App Update 2.0";
 
   callback(null, {
     statusCode: 200,
